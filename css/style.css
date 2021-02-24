@@ -49,6 +49,7 @@ header {
 }
 
 .second_box {
+  position: fixed;
   width: 500px;
   height: 300px;
   display: flex;
