@@ -105,7 +105,7 @@ p.typing-txt{
   position:relative;
   display: inline-block;
   height: 20px; overflow: hidden;
-  animation: typingAni 2s steps(30, end) 1;
+  animation: typingAni 2s steps(10000, end) 1;
   color: white;
   font-size: 20px;
 }
@@ -113,8 +113,8 @@ p.typing-txt::after{
   position:absolute; 
   display:block;
   content:""; 
-  width: 20px; 
-  height: 13px;
+  width: 200px; 
+  height: 130px;
   top : 3px;
   right:0; 
   border-right: 1px solid black;
@@ -128,4 +128,9 @@ p.typing-txt::after{
   0%{opacity:0;}
   50%{opacity:1;}
   100%{opacity:0;}
+}
+
+.text_main {
+  color: white;
+  position: relative;
 }
