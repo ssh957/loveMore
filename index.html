@@ -5,32 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LoveMore</title>
+    <script type="text/javascript">
+    window.onload = function(){
+      var today = new Date();
+      var anniversary = new Date(2019, 07, 31); //시작날짜
+      var count = today.getTime() - anniversary.getTime();
+      count = Math.ceil(count/(24*60*60*1000));
+      var anni = document.getElementById("anni");
+    anni.innerHTML = "<FONT size='4.5' face='https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap' color='white'>" + count;
+    }
+    </script>
   </head>
   <body>
     <header>
       <i class="fas fa-bars fa-2x"></i>
-      <div class="header_bgm"></div>
-      <iframe src="https://player.bgmstore.net/IVm4w" width="422" height="240" frameborder="0"></iframe><br><a href="https://bgmstore.net/view/IVm4w" target="_blank">BGM정보 : 브금저장소 - https://bgmstore.net/view/5bb0d121352039d22709b583/%EC%9B%B9%ED%88%B0%20&quot;%EA%B8%88%EC%84%B8%20%EC%82%AC%EB%9E%91%EC%97%90%20%EB%B9%A0%EC%A7%80%EB%8A%94&quot;%20%EC%9E%A5%EB%B2%94%EC%A4%80%20%EA%B8%B0%ED%83%80%20%EB%B9%84%EC%A7%80%EC%97%A0%20-%20%EC%82%AC%EB%9E%91%EC%97%90%20%EB%B9%A0%EC%A1%8C%EC%A3%A0%20(%EB%8B%B9%EC%8B%A0%EB%A7%8C%EC%9D%B4)</a>
+      <audio autoplay controls>
+        <source src="audio/ThoughtOfYou.mp3" type="audio/mp3">
+      </audio>
     </header>
 
     <div class="container">
       <div class="main_box">
-        <a href="message.html"><img class="main_img" src="screenshots/couple.jpg"></a>
+        <a href="message.html"><img class="main_img" src="screenshots/seulgi.png"></a>
       </div>
 
       <div class="second_box">
         <div class="seungHyun">
-          <div class="seungHyun_img"></div>
+          <img class="seungHyun_img" src="screenshots/seunghyun.jpg" alt="">
           <span class="img_span">승현</span>
         </div>
 
         <div class="heart">
-          <div class="heart_img"></div>
-          <span class="img_span">536</span>
+          <i class="fas fa-heart fa-lg"></i>
+          <span id="anni" style=";"></span>
         </div>
 
         <div class="seulGi">
-          <div class="seulGi_img"></div>
+          <img class="seulGi_img" src="screenshots/seulgi.jpg" alt="">
           <span class="img_span">슬기</span>
         </div>
       </div>

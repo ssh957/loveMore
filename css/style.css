@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  background-color: gray;
   width: 100%;
   height: 20vh;
   display: flex;
@@ -44,8 +43,9 @@ header {
 }
 
 .main_img {
-  width: 700px;
-  height: 400px;
+  width: 673px;
+  height: 380px;
+  border-radius: 30px;
 }
 
 .second_box {
@@ -54,7 +54,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
 }
 
 .seungHyun, .heart, .seulGi {
@@ -66,6 +65,7 @@ header {
 
 .seungHyun_img, .heart_img, .seulGi_img {
   background-color: white;
+  position: relative;
   width: 100px;
   height: 100px;
   margin: 10px 30px;
@@ -77,8 +77,26 @@ header {
   font-size: 25px;
 }
 
+.heart {
+  color: white;
+}
 
+@keyframes heartBeat {
+  0%{
+    color: white;
+    transform: none;
+  }
+  50%{
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100%{
+    color: tomato;
+    transform: none;
+  }
+}
 
-
-
+.heart i {
+  animation: heartBeat 1s linear infinite;
+}
 
