@@ -36,6 +36,7 @@ header {
 
 .main_box {
   background-color: skyblue;
+  margin-top: -10%;
   width: 100px;
   height: 100px;
   display: flex;
