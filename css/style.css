@@ -104,8 +104,8 @@ header {
 p.typing-txt{
   position:relative;
   display: inline-block;
-  height: 20px; overflow: hidden;
-  animation: typingAni 2s steps(10000, end) 1;
+  height: 22px; overflow: hidden;
+  animation: typingAni 2s steps(1000, end) 1;
   color: white;
   font-size: 20px;
 }
@@ -114,10 +114,10 @@ p.typing-txt::after{
   display:block;
   content:""; 
   width: 200px; 
-  height: 130px;
+  height: 100px;
   top : 3px;
   right:0; 
-  border-right: 1px solid black;
+  border-right: 1.8px solid white;
   animation: cursor 1s step-end infinite;
 }
 @keyframes typingAni {
